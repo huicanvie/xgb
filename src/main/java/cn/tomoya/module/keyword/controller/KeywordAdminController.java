@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import cn.tomoya.config.base.BaseController;
 import cn.tomoya.config.yml.SiteConfig;
-import cn.tomoya.module.blacklist.service.KeywordService;
+import cn.tomoya.module.keyword.service.KeywordService;
 
 /**
  * 黑名单

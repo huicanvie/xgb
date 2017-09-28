@@ -10,8 +10,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import cn.tomoya.module.blacklist.dao.KeywordDao;
-import cn.tomoya.module.blacklist.entity.Keyword;
+import cn.tomoya.module.keyword.dao.KeywordDao;
+import cn.tomoya.module.keyword.entity.Keyword;
 
 /**
  * 黑名单

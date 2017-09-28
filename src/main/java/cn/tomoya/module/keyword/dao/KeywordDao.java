@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import cn.tomoya.module.blacklist.entity.Keyword;
+import cn.tomoya.module.keyword.entity.Keyword;
 
 /**
  * Created by tomoya.

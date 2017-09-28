@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import cn.tomoya.config.base.BaseController;
 import cn.tomoya.config.yml.SiteConfig;
-import cn.tomoya.module.blacklist.service.KeywordService;
+import cn.tomoya.module.blacklist.service.BlacklistService;
 
 /**
  * 黑名单
@@ -20,7 +20,7 @@ public class BlacklistAdminController extends BaseController {
   @Autowired
   private SiteConfig siteConfig;
   @Autowired
-  private KeywordService blacklistService;
+  private BlacklistService blacklistService;
 
   /**
    * 用户列表
