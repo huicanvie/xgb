@@ -14,7 +14,7 @@ import cn.tomoya.module.keyword.service.KeywordService;
  * 黑名单
  */
 @Controller
-@RequestMapping("/admin/blacklist")
+@RequestMapping("/admin/keywordfilter")
 public class KeywordAdminController extends BaseController {
 
   @Autowired
@@ -32,7 +32,7 @@ public class KeywordAdminController extends BaseController {
   @GetMapping("/list")
   public String list(Integer p, Model model) {
 //    model.addAttribute("page", blacklistService.pageUser(p == null ? 1 : p, siteConfig.getPageSize()));
-    return render("/admin/blacklist/list");
+    return render("/admin/keyword/list");
   }
 
 }

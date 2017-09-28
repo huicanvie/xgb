@@ -3,7 +3,7 @@
 <div class="row">
   <div class="col-md-3 hidden-sm hidden-xs">
     <#include "../components/admin_left.ftl">
-    <@admin_left page_tab="blacklist"/>
+    <@admin_left page_tab="keywordfilter"/>
   </div>
   <div class="col-md-9">
     <div class="panel panel-default">
