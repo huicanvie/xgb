@@ -125,7 +125,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>pybbs</finalName>
+		<finalName>xgbbbs</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
