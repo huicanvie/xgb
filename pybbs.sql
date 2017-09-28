@@ -19,7 +19,9 @@ VALUES (1, '仪表盘', 'index', 0, NULL), (2, '话题', 'topic', 0, NULL), (3, 
   (33, '删除版块', 'section:delete', 29, '/admin/section/*/delete'), (34, '标签', 'label', 0, ''),
   (35, '标签列表', 'label:list', 34, '/admin/label/list'), (36, '标签编辑', 'label:edit', 34, '/admin/label/*/edit'),
   (37, '标签更新', 'label:update', 34, '/admin/label/update'), (38, '标签删除', 'label:delete', 34, '/admin/label/*/delete'),
-  (39, '后台话题列表', 'topic:list', 2, '/admin/topic/list'), (40, '话题锁定', 'topic:lock', 2, '/admin/topic/*/lock');
+  (39, '后台话题列表', 'topic:list', 2, '/admin/topic/list'), (40, '话题锁定', 'topic:lock', 2, '/admin/topic/*/lock'),
+  (41, '黑名单', 'blacklist', 0, ''), ( 42, '关键字', 'keywordfilter', 0, '' ), 
+  (43, '黑名单列表', 'blacklist:list', 41, '/admin/blacklist/list'), (44, '关键字列表', 'keywordfilter:list', 42, '/admin/keywordfilter/list');
 
 INSERT INTO `pybbs_role` VALUES (1, '超级管理员', 'admin'), (2, '版主', 'banzhu'), (3, '会员', 'user');
 
@@ -27,13 +29,13 @@ INSERT INTO `pybbs_role_permission`
 VALUES (1, 7), (2, 7), (1, 8), (2, 8), (1, 9), (2, 9), (1, 10), (2, 10), (1, 11), (2, 11), (1, 12), (2, 12), (1, 13),
   (1, 14), (1, 15), (1, 16), (1, 17), (1, 18), (1, 19), (1, 20), (1, 21), (1, 22), (1, 23), (1, 25), (1, 26), (1, 27),
   (2, 27), (1, 28), (2, 28), (1, 30), (1, 31), (1, 32), (1, 33), (1, 35), (1, 36), (1, 37), (1, 38), (1, 39), (2, 39),
-  (1, 40), (2, 40), (3, 8);
+  (1, 40), (2, 40), (3, 8), (1, 41), (1, 42), (1, 43), (1, 44);
 
 INSERT INTO `pybbs_section` VALUES (1, '分享'), (4, '博客'), (5, '招聘'), (3, '新闻'), (2, '问答');
 
 INSERT INTO `pybbs_user` (`id`, `avatar`, `block`, `email`, `in_time`, `password`, `signature`, `token`, `url`, `username`, `attempts`, `attempts_time`, `score`, `space_size`)
 VALUES
-  (1, 'http://localhost:8080/static/images/upload/avatar/default.png', FALSE, 'liygheart@qq.com', '2016-09-09 09:50:14',
+  (1, 'http://localhost:8080/static/images/upload/avatar/default.png', FALSE, 'dd@xgb.com', '2016-09-09 09:50:14',
       '$2a$10$KkUG107R3ASTHfAHei.bweXWXgCa4cE1KhK.F0odzfE0r97aeeTXC', 'hello world',
       'd20b9a5c-8693-41a6-8943-ddb2cb78eebd', 'https://tomoya92.github.io', 'tomoya', 0, '2017-06-21 23:11:24', 2000,
    50);

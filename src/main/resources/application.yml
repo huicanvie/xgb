@@ -10,7 +10,7 @@ spring:
     - file:./templates/
     cache: false
   datasource:
-    url: jdbc:mysql://localhost/pybbs?useSSL=false&characterEncoding=utf8
+    url: jdbc:mysql://localhost/xgbbbs?useSSL=false&characterEncoding=utf8
     username: root
     password: root
   jpa:
