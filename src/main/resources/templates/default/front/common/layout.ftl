@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>${page_title!site.name}</title>
   <link rel="icon" href="//tomoya.cn/favicon.ico">
-  <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" -->
+  <link href="/static/bootcss/bootstrap.min.css" rel="stylesheet">
+  <!-- link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" -->
+  <link href="/static/bootcss/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/static/default/css/pybbs.css">
 
-  <script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
-  <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script -->
+  <!-- script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script -->
+  <script src="/static/bootcss/jquery.min.js"></script>
+  <script src="/static/bootcss/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
