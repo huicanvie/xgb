@@ -1,0 +1,55 @@
+server:
+  port: 8080
+spring:
+  resources:
+    static-locations:
+    - file:./static/
+  freemarker:
+    template-loader-path:
+    - classpath:/templates/
+    - file:./templates/
+    cache: false
+  datasource:
+    url: jdbc:mysql://localhost/pybbs?useSSL=false&characterEncoding=utf8
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.search.default.directory_provider: filesystem
+      hibernate.search.default.indexBase: ./indexes
+  mvc:
+    static-path-pattern: /static/**
+  mail:
+    host: smtp.exmail.qq.com
+    username: xxoo@example.com
+    password:
+    port:
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.ssl.enable: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+  http:
+    multipart:
+      max-file-size: 2MB
+site:
+  name: 小乖宝
+  intro: <h5>属于Java语言的bbs</h5><p>在这里，您可以提问，回答，分享，诉说，这是个属于Java程序员的社区，欢迎您的加入！</p>
+  baseUrl: http://localhost:8080/
+  staticUrl: http://localhost:8080/static/images/upload/
+  pageSize: 20
+  uploadPath: ./static/images/upload/
+  theme: default
+  search: true
+  attempts: 5
+  attemptsWaitTime: 15
+  maxCreateTopic: 10
+  userUploadSpaceSize: 50 # 单位MB
+  cookie:
+    domain: localhost
+    attendanceMaxAge: 86400
+    attendanceName: attendance
