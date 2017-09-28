@@ -13,9 +13,7 @@ import org.springframework.stereotype.Repository;
 import cn.tomoya.module.blacklist.entity.Blacklist;
 
 /**
- * Created by tomoya.
- * Copyright (c) 2016, All Rights Reserved.
- * http://tomoya.cn
+ * 黑名单dao
  */
 @Repository
 @CacheConfig(cacheNames = "blacklist")
