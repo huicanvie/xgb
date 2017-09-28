@@ -1,4 +1,4 @@
-package cn.tomoya.module.blacklist.controller;
+package cn.tomoya.module.keyword.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,12 +15,12 @@ import cn.tomoya.module.blacklist.service.KeywordService;
  */
 @Controller
 @RequestMapping("/admin/blacklist")
-public class BlacklistAdminController extends BaseController {
+public class KeywordAdminController extends BaseController {
 
   @Autowired
   private SiteConfig siteConfig;
   @Autowired
-  private KeywordService blacklistService;
+  private KeywordService keywordService;
 
   /**
    * 用户列表

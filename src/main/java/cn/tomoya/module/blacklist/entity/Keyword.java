@@ -15,7 +15,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "pybbs_blacklist")
-public class Blacklist implements Serializable {
+public class Keyword implements Serializable {
 	@Id
 	@GeneratedValue
 	private int id;

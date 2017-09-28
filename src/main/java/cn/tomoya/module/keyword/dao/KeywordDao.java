@@ -1,4 +1,4 @@
-package cn.tomoya.module.blacklist.dao;
+package cn.tomoya.module.keyword.dao;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import cn.tomoya.module.blacklist.entity.Blacklist;
+import cn.tomoya.module.blacklist.entity.Keyword;
 
 /**
  * Created by tomoya.
@@ -19,17 +19,17 @@ import cn.tomoya.module.blacklist.entity.Blacklist;
  */
 @Repository
 @CacheConfig(cacheNames = "blacklist")
-public interface BlacklistDao extends JpaRepository<Blacklist, Integer> {
+public interface KeywordDao extends JpaRepository<Keyword, Integer> {
 
   @Cacheable
-  Blacklist findOne(int id);
+  Keyword findOne(int id);
 
   @CacheEvict
   void delete(int id);
   
-  @Query("select b from Blacklist b where b.user_id=:userId")
-  public List<Blacklist> getListByUserId(@Param("userId") int userId);
+  @Query("select b from Keyword b where b.id=:id")
+  public List<Keyword> getListByUserId(@Param("id") int id);
   
-  @Query("select b from Blacklist b")
-  public List<Blacklist> findAll();
+  @Query("select b from Keyword b")
+  public List<Keyword> findAll();
 }
