@@ -18,10 +18,10 @@ import org.springframework.cache.annotation.EnableCaching;
 @EnableConfigurationProperties(SiteConfig.class)
 // @EnableAutoConfiguration注解加上，有异常不会找默认error页面了，而是直接输出字符串
 @EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
-public class PybbsApplication {
+public class XgbbbsApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(PybbsApplication.class, args);
+    SpringApplication.run(XgbbbsApplication.class, args);
   }
 
 }
