@@ -40,5 +40,6 @@ VALUES
       'd20b9a5c-8693-41a6-8943-ddb2cb78eebd', 'https://tomoya92.github.io', 'tomoya', 0, '2017-06-21 23:11:24', 2000,
    50);
 
+   -- 添加角色
 INSERT INTO `pybbs_user_role` VALUES (1, 1);
 
