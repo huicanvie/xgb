@@ -1,6 +1,7 @@
 package cn.tomoya.module.blacklist.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import cn.tomoya.config.base.BaseController;
 import cn.tomoya.config.yml.SiteConfig;
+import cn.tomoya.module.blacklist.entity.Blacklist;
 import cn.tomoya.module.blacklist.service.BlacklistService;
 
 /**
@@ -31,7 +33,8 @@ public class BlacklistAdminController extends BaseController {
    */
   @GetMapping("/list")
   public String list(Integer p, Model model) {
-//    model.addAttribute("page", blacklistService.pageUser(p == null ? 1 : p, siteConfig.getPageSize()));
+    Page<Blacklist> pageUser = blacklistService.pageUser(p == null ? 1 : p, siteConfig.getPageSize());
+	model.addAttribute("page", pageUser);
     return render("/admin/blacklist/list");
   }
 

@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -29,5 +31,5 @@ public interface BlacklistDao extends JpaRepository<Blacklist, Integer> {
   public List<Blacklist> getListByUserId(@Param("userId") int userId);
   
   @Query("select b from Blacklist b")
-  public List<Blacklist> findAll();
+  public Page<Blacklist> findAll(Pageable pageable);
 }

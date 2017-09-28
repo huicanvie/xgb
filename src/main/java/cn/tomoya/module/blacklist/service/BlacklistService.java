@@ -54,7 +54,7 @@ public class BlacklistService {
    * @return
    */
   public Page<Blacklist> pageUser(int p, int size) {
-    Sort sort = new Sort(new Sort.Order(Sort.Direction.DESC, "inTime"));
+    Sort sort = new Sort(new Sort.Order(Sort.Direction.DESC, "user_id"));
     Pageable pageable = new PageRequest(p - 1, size, sort);
     return blacklistDao.findAll(pageable);
   }

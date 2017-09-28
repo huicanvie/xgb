@@ -9,7 +9,6 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         黑名单管理
-        <span class="pull-right">个用户</span>
       </div>
       <div class="table-responsive">
         <table class="table table-striped">
@@ -23,6 +22,17 @@
           </thead>
           <tbody>
             
+                <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>111</td>
+                  <td>1111</td>
+                  <td>
+                    
+                      <a href="javascript:if(confirm('确认移出黑名单吗?')) location.href=''" class="btn btn-xs btn-danger">移出</a>
+                    
+                  </td>
+                </tr>
+              
           </tbody>
         </table>
       </div>
