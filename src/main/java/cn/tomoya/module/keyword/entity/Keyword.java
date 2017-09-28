@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * 黑名单
+ * 关键字
  * 
  * @author ddppfamily
  *

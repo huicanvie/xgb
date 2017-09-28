@@ -11,7 +11,7 @@ import cn.tomoya.config.yml.SiteConfig;
 import cn.tomoya.module.keyword.service.KeywordService;
 
 /**
- * 黑名单
+ * 关键字
  */
 @Controller
 @RequestMapping("/admin/keywordfilter")

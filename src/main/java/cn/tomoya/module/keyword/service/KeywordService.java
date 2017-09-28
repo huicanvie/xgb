@@ -14,7 +14,7 @@ import cn.tomoya.module.keyword.dao.KeywordDao;
 import cn.tomoya.module.keyword.entity.Keyword;
 
 /**
- * 黑名单
+ * 关键字
  * @author ddppfamily
  */
 @Service

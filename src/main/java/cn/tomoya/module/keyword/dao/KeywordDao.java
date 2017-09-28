@@ -13,9 +13,7 @@ import org.springframework.stereotype.Repository;
 import cn.tomoya.module.keyword.entity.Keyword;
 
 /**
- * Created by tomoya.
- * Copyright (c) 2016, All Rights Reserved.
- * http://tomoya.cn
+ * 关键字dao
  */
 @Repository
 @CacheConfig(cacheNames = "blacklist")
