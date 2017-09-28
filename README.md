@@ -1,2 +1,2 @@
 # xgb
-bbs
+this is xgb bbs
