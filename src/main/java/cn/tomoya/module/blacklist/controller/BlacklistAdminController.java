@@ -48,12 +48,16 @@ public class BlacklistAdminController extends BaseController {
 		
 		User u = new User();
 		u.setId(1);
-		Blacklist findListByUserId = blacklistService.findListByUserId(u);
+		Blacklist findListByUserId = blacklistService.findByUserId(u);
 		User user2 = findListByUserId.getUser();
 		System.out.println("<<<<<<<<<<<<<<<<<<<<" + user2.getUsername());
 		
 //		List listByUserId = blacklistService.getListByUserId(1);
 //		System.out.println(listByUserId.size());
+		
+		User u1 = new User();
+		u1.setId(2);
+		blacklistService.sava(u1);
 		
 		return render("/admin/blacklist/list");
 	}

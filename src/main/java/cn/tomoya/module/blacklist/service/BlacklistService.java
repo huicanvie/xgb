@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import cn.tomoya.module.blacklist.dao.BlacklistDao;
 import cn.tomoya.module.blacklist.entity.Blacklist;
+import cn.tomoya.module.label.entity.Label;
 import cn.tomoya.module.user.entity.User;
 
 /**
@@ -33,8 +34,12 @@ public class BlacklistService {
 		return blacklistDao.findAll(pageable);
 	}
 
-	public Blacklist findListByUserId(User user) {
-		return blacklistDao.findListByUserId(user);
+	public Blacklist findByUserId(User user) {
+		return blacklistDao.findByUserId(user.getId());
+	}
+	
+	public void save(User user) {
+		blacklistDao.save(user);
 	}
 
 }
