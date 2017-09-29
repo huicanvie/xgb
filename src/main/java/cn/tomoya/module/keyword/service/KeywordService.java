@@ -1,7 +1,5 @@
 package cn.tomoya.module.keyword.service;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -35,11 +33,6 @@ public class KeywordService {
     Sort sort = new Sort(new Sort.Order(Sort.Direction.DESC, "score"));
     Pageable pageable = new PageRequest((p - 1) * size, size, sort);
     return keywordDao.findAll(pageable);
-  }
-
-  public List<Keyword> findById(int id) {
-//    return blacklistDao.findOne(id);
-	  return keywordDao.getListByUserId(id);
   }
 
   public void save(Keyword blacklist) {

@@ -16,7 +16,7 @@ import cn.tomoya.module.keyword.entity.Keyword;
  * 关键字dao
  */
 @Repository
-@CacheConfig(cacheNames = "blacklist")
+@CacheConfig(cacheNames = "keyword")
 public interface KeywordDao extends JpaRepository<Keyword, Integer> {
 
   @Cacheable
@@ -25,9 +25,4 @@ public interface KeywordDao extends JpaRepository<Keyword, Integer> {
   @CacheEvict
   void delete(int id);
   
-  @Query("select b from Keyword b where b.id=:id")
-  public List<Keyword> getListByUserId(@Param("id") int id);
-  
-  @Query("select b from Keyword b")
-  public List<Keyword> findAll();
 }
