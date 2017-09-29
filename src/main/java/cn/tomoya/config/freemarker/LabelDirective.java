@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by tomoya on 17-6-12.
+ * xgb on 17-6-12.
  */
 @Component
 public class LabelDirective implements TemplateDirectiveModel {

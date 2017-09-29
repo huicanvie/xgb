@@ -24,7 +24,7 @@ import cn.tomoya.util.DateUtil;
 import cn.tomoya.util.StrUtil;
 
 /**
- * Created by tomoya. Copyright (c) 2016, All Rights Reserved. http://tomoya.cn
+ * xgb
  */
 public class TestDemo {
 

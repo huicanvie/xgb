@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * Created by tomoya.
+ * xgb.
  * Copyright (c) 2016, All Rights Reserved.
  * http://tomoya.cn
  */

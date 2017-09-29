@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by tomoya.
+ * xgb.
  * Copyright (c) 2016, All Rights Reserved.
  * http://tomoya.cn
  */

@@ -17,7 +17,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by tomoya.
+ * xgb.
  * Copyright (c) 2016, All Rights Reserved.
  * http://tomoya.cn
  */

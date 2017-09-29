@@ -3,7 +3,7 @@ package cn.tomoya.util;
 import java.security.MessageDigest;
 
 /**
- * Created by tomoya.
+ * xgb.
  * Copyright (c) 2016, All Rights Reserved.
  * http://tomoya.cn
  */

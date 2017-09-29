@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * Created by tomoya on 17-6-6.
+ * xgb on 17-6-6.
  */
 @Component
 public class UserReplyDirective implements TemplateDirectiveModel {

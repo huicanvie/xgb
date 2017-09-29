@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
- * Created by tomoya.
+ * xgb.
  * Copyright (c) 2016, All Rights Reserved.
  * http://tomoya.cn
  */

@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by tomoya on 2017/6/16.
+ * xgb on 2017/6/16.
  */
 @Controller
 @RequestMapping("/admin/label")

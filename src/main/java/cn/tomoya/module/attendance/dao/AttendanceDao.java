@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Date;
 
 /**
- * Created by tomoya on 17-6-15.
+ * xgb on 17-6-15.
  */
 public interface AttendanceDao extends JpaRepository<Attendance, Integer> {
 

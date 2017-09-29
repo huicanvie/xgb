@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * Created by tomoya on 17-6-12.
+ * xgb on 17-6-12.
  */
 @Component
 public class NotificationsDirective implements TemplateDirectiveModel {

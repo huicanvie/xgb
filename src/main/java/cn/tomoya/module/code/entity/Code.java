@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Created by tomoya on 17-6-6.
+ * xgb on 17-6-6.
  */
 @Entity
 @Table(name = "pybbs_code")

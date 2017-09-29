@@ -4,7 +4,7 @@ import org.pegdown.Extensions;
 import org.pegdown.PegDownProcessor;
 
 /**
- * Created by tomoya.
+ * xgb.
  * Copyright (c) 2016, All Rights Reserved.
  * http://tomoya.cn
  */

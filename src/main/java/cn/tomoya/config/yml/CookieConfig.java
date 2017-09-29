@@ -1,7 +1,7 @@
 package cn.tomoya.config.yml;
 
 /**
- * Created by tomoya on 17-6-15.
+ * xgb on 17-6-15.
  */
 public class CookieConfig {
 

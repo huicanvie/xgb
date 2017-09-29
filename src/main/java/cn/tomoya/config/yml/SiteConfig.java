@@ -3,7 +3,7 @@ package cn.tomoya.config.yml;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * Created by tomoya.
+ * xgb.
  * Copyright (c) 2016, All Rights Reserved.
  * http://tomoya.cn
  */

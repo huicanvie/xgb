@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Created by tomoya on 2017/6/16.
+ * xgb on 2017/6/16.
  */
 @Entity
 @Table(name = "pybbs_label")

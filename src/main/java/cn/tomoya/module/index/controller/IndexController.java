@@ -45,7 +45,7 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * Created by tomoya.
+ * xgb.
  * Copyright (c) 2016, All Rights Reserved.
  * http://tomoya.cn
  */
