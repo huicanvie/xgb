@@ -22,6 +22,12 @@ public interface BlacklistDao extends JpaRepository<Blacklist, Integer> {
 //	@Query(value = "select a.username userName, b.id, b.user_id from pybbs_blacklist b, pybbs_user a where a.id = b.user_id /*#pageable*/", countQuery = "select count(*) from pybbs_blacklist", nativeQuery = true)
 //	public Page findAll(Pageable pageable);
 	
+	
+	/**
+	 * 
+	 * @param user
+	 * @return
+	 */
 	@Cacheable
 	Blacklist findListByUserId(User user);
 }
