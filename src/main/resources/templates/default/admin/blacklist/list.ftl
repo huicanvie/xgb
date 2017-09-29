@@ -25,7 +25,7 @@
                   <td>${blacklist.user.id}</td>
                   <td>${blacklist.user.username}</td>
                   <td>
-                      <a href="javascript:if(confirm('确认将[${blacklist.user.username}]移出黑名单吗?')) location.href='/admin/blacklist/${blacklist.id}/unblock'" class="btn btn-xs btn-danger">移出</a>
+                      <a href="javascript:if(confirm('确认将[${blacklist.user.username}]移出黑名单吗?')) location.href='/admin/blacklist/${blacklist.id}/unblack'" class="btn btn-xs btn-danger">移出</a>
                   </td>
                 </tr>
               </#list>

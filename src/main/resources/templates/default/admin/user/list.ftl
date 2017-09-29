@@ -15,7 +15,7 @@
         <table class="table table-striped">
           <thead>
           <tr>
-          	<th><input type="checkbox" title="全选"></th>
+          	
             <th>ID</th>
             <th>用户名</th>
             <th>邮箱</th>
@@ -29,7 +29,7 @@
           <tbody>
             <#list page.getContent() as user>
             <tr>
-              <td><input type="checkbox"></td>
+              
               <td>${user.id}</td>
               <td><a href="/user/${user.username}" target="_blank">${user.username}</a></td>
               <td><a href="mailto:${user.email!}" target="_blank">${user.email!}</a></td>
@@ -46,6 +46,9 @@
               <td>
                 <#if sec.allGranted("user:role")>
                   <a href="/admin/user/${user.id}/role" class="btn btn-xs btn-warning">配置角色</a>
+                </#if>
+                <#if !(user.blacklist??)>
+                  &nbsp;&nbsp;<a href="/admin/blacklist/${user.id}/black" class="btn btn-xs btn-warning"> + 黑名单</a>
                 </#if>
                 <#if user.block == true>
                   <#if sec.allGranted("user:unblock")>

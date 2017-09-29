@@ -73,9 +73,6 @@ public class BlacklistAdminController extends BaseController {
 		//
 		// blacklistService.delete(b);
 
-//		Blacklist b = blacklistService.findById(2);
-//		blacklistService.delete(b);
-
 		return render("/admin/blacklist/list");
 	}
 
@@ -86,11 +83,29 @@ public class BlacklistAdminController extends BaseController {
 	 * @param response
 	 * @return
 	 */
-	@GetMapping("/{id}/unblock")
-	public String unblock(@PathVariable Integer id, HttpServletResponse response) {
-		// userService.unBlockUser(id);
-		System.out.println(id);
+	@GetMapping("/{id}/unblack")
+	public String unblack(@PathVariable Integer id, HttpServletResponse response) {
+		Blacklist b = blacklistService.findById(id);
+		blacklistService.delete(b);
+
 		return redirect(response, "/admin/blacklist/list");
+	}
+
+	/**
+	 * 加入黑名单用户
+	 *
+	 * @param id
+	 * @param response
+	 * @return
+	 */
+	@GetMapping("/{id}/black")
+	public String black(@PathVariable Integer id, HttpServletResponse response) {
+		User uu = userService.findById(id);
+		Blacklist b = new Blacklist();
+		b.setUser(uu);
+		blacklistService.save(b);
+
+		return redirect(response, "/admin/user/list");
 	}
 
 }

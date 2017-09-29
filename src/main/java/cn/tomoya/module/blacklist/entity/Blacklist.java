@@ -43,7 +43,8 @@ public class Blacklist implements Serializable {
 //		this.user_id = user_id;
 //	}
 	
-	@OneToOne(cascade=CascadeType.ALL)  
+//	@OneToOne(cascade= {CascadeType.REFRESH, CascadeType.PERSIST})  
+	@OneToOne(cascade= CascadeType.REFRESH)  
     @JoinColumn(name="user_id")  
     private User user;
 
