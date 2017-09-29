@@ -37,7 +37,7 @@ spring:
     username: root
     password: 123123
   jpa:
-    database: mysql ## 朋也社区用的是jpa操作数据库，默认使用mysql，理论上hibernate支持的数据库，pybbs都支持，我没有其它数据库，就没测试
+    database: mysql ## xgb用的是jpa操作数据库，默认使用mysql，理论上hibernate支持的数据库，xgbbbs都支持，我没有其它数据库，就没测试
     show-sql: true ## 日志文件里是否显示sql，生产环境关闭就可以了
 ```
 
@@ -45,8 +45,8 @@ spring:
 
 ```yml
 site:
-  name: 朋也社区
-  intro: <h5>属于Java语言的bbs</h5><p>在这里，您可以提问，回答，分享，诉说，这是个属于Java程序员的社区，欢迎您的加入！</p>
+  name: xgb
+  intro: <p>欢迎您的加入！</p>
   baseUrl: http://localhost:8080/
   staticUrl: http://localhost:8080/static/images/upload/
   pageSize: 20
