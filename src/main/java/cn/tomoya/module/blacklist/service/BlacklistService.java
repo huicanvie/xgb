@@ -1,8 +1,5 @@
 package cn.tomoya.module.blacklist.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -13,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import cn.tomoya.module.blacklist.dao.BlacklistDao;
 import cn.tomoya.module.blacklist.entity.Blacklist;
-import cn.tomoya.module.label.entity.Label;
 import cn.tomoya.module.user.entity.User;
 
 /**
@@ -38,8 +34,16 @@ public class BlacklistService {
 		return blacklistDao.findByUserId(user.getId());
 	}
 	
-	public void save(User user) {
-		blacklistDao.save(user);
+	public Blacklist findById(int id) {
+		return blacklistDao.findById(id);
+	}
+	
+	public void save(Blacklist blacklist) {
+		blacklistDao.save(blacklist);
+	}
+	
+	public void delete(Blacklist blacklist) {
+		blacklistDao.delete(blacklist);
 	}
 
 }

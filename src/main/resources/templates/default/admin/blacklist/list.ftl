@@ -14,25 +14,21 @@
         <table class="table table-striped">
           <thead>
           <tr>
-          	<th><input type="checkbox" title="全选"></th>
-            <th>ID</th>
+            <th>id</th>
             <th>用户名</th>
             <th>操作</th>
           </tr>
           </thead>
           <tbody>
-            
+            <#list page.getContent() as blacklist>
                 <tr>
-                  <td><input type="checkbox" value=""></td>
-                  <td>111</td>
-                  <td>1111</td>
+                  <td>${blacklist.user.id}</td>
+                  <td>${blacklist.user.username}</td>
                   <td>
-                    
-                      <a href="javascript:if(confirm('确认移出黑名单吗?')) location.href=''" class="btn btn-xs btn-danger">移出</a>
-                    
+                      <a href="javascript:if(confirm('确认将[${blacklist.user.username}]移出黑名单吗?')) location.href='/admin/blacklist/${blacklist.id}/unblock'" class="btn btn-xs btn-danger">移出</a>
                   </td>
                 </tr>
-              
+              </#list>
           </tbody>
         </table>
       </div>

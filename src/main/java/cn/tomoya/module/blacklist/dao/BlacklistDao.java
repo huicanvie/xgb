@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import cn.tomoya.module.blacklist.entity.Blacklist;
-import cn.tomoya.module.user.entity.User;
 
 /**
  * 黑名单dao
@@ -22,6 +21,9 @@ public interface BlacklistDao extends JpaRepository<Blacklist, Integer> {
 //	public Page findAll(Pageable pageable);
 	
 	@Cacheable
-	Blacklist findByUserId(int id);
+	Blacklist findByUserId(int userId);
+	
+	@Cacheable
+	Blacklist findById(int id);
 
 }
