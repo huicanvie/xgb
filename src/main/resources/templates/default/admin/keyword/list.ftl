@@ -9,7 +9,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         关键字管理
-        <span class="pull-right">个用户</span>
+        <span class="pull-right"><a href="/admin/keyword/a/edit" class="btn btn-xs btn-warning">添加关键字</a></span>
       </div>
       <div class="table-responsive">
         <table class="table table-striped">
