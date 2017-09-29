@@ -7,10 +7,10 @@
   </div>
   <div class="col-md-9">
     <div class="panel panel-default">
-      <div class="panel-heading">
+      <div class="panel-heading" style="height:50px">
         角色管理
         <#if sec.allGranted("role:add")>
-          <a href="/admin/role/add" class="pull-right">添加角色</a>
+          <a href="/admin/role/add" class="pull-right btn btn-sm btn-primary">添加角色</a>
         </#if>
       </div>
       <div class="table-responsive">

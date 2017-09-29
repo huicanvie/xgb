@@ -7,10 +7,10 @@
   </div>
   <div class="col-md-9">
     <div class="panel panel-default">
-      <div class="panel-heading">
+      <div class="panel-heading" style="height:50px">
         <a href="/">主页</a> / 板块列表
         <span class="pull-right">
-	        <a href="/admin/section/add">添加板块</a>
+	        <a href="/admin/section/add" class="btn btn-sm btn-primary">添加板块</a>
 	    </span>
       </div>
       <div class="table-responsive">

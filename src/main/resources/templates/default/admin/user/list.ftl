@@ -48,7 +48,7 @@
                   <a href="/admin/user/${user.id}/role" class="btn btn-xs btn-warning">配置角色</a>
                 </#if>
                 <#if !(user.blacklist??)>
-                  &nbsp;&nbsp;<a href="/admin/blacklist/${user.id}/black" class="btn btn-xs btn-warning"> + 黑名单</a>
+                  &nbsp;&nbsp;<a href="/admin/blacklist/${user.id}/black" class="btn btn-xs btn-danger"> + 黑名单</a>
                 </#if>
                 <#if user.block == true>
                   <#if sec.allGranted("user:unblock")>

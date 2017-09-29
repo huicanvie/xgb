@@ -9,10 +9,10 @@
     <div class="row">
       <div class="col-md-10">
         <div class="panel panel-default">
-          <div class="panel-heading">
+          <div class="panel-heading" style="height:50px">
             权限管理
             <#if sec.allGranted("permission:add")>
-              <a class="pull-right" href="/admin/permission/add?pid=${pid!}">添加权限</a>
+              <a class="pull-right btn btn-sm btn-primary" href="/admin/permission/add?pid=${pid!}" >添加权限</a>
             </#if>
           </div>
           <div class="table-responsive">
