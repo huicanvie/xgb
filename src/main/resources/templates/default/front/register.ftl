@@ -1,7 +1,7 @@
 <#include "./common/layout.ftl">
 <@html page_title="注册" page_tab="register">
 <div class="row">
-  <div class="col-md-9">
+  <div class="col-md-liz" style="position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px;">
     <div class="panel panel-default">
       <div class="panel-heading">
         <a href="/">主页</a> / 注册
