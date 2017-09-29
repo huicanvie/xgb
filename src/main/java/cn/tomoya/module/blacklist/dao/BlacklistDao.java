@@ -1,18 +1,13 @@
 package cn.tomoya.module.blacklist.dao;
 
-import java.util.List;
-
 import org.springframework.cache.annotation.CacheConfig;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import cn.tomoya.module.blacklist.entity.Blacklist;
+import cn.tomoya.module.user.entity.User;
 
 /**
  * 黑名单dao
@@ -21,15 +16,12 @@ import cn.tomoya.module.blacklist.entity.Blacklist;
 @CacheConfig(cacheNames = "blacklist")
 public interface BlacklistDao extends JpaRepository<Blacklist, Integer> {
 
-  @Cacheable
-  Blacklist findOne(int id);
-
-  @CacheEvict
-  void delete(int id);
-  
-  @Query("select b from Blacklist b where b.user_id=:userId")
-  public List<Blacklist> getListByUserId(@Param("userId") int userId);
-  
-  @Query("select b from Blacklist b")
-  public Page<Blacklist> findAll(Pageable pageable);
+//	@Query(value = "select a.username userName, b.id, b.user_id from pybbs_blacklist b, pybbs_user a where a.id = b.user_id and b.user_id = ?1", nativeQuery = true)
+//	public List getListByUserId(@Param("userId") int userId);
+//
+//	@Query(value = "select a.username userName, b.id, b.user_id from pybbs_blacklist b, pybbs_user a where a.id = b.user_id /*#pageable*/", countQuery = "select count(*) from pybbs_blacklist", nativeQuery = true)
+//	public Page findAll(Pageable pageable);
+	
+	@Cacheable
+	Blacklist findListByUserId(User user);
 }

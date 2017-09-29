@@ -1,5 +1,6 @@
 package cn.tomoya.module.user.entity;
 
+import cn.tomoya.module.blacklist.entity.Blacklist;
 import cn.tomoya.module.security.entity.Role;
 import cn.tomoya.util.Constants;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -79,7 +80,18 @@ public class User implements Serializable {
   @JsonIgnore
   private Set<Role> roles = new HashSet<>();
 
-  public int getId() {
+  @OneToOne(mappedBy="user")  
+  private Blacklist blacklist;  
+  
+  public Blacklist getBlacklist() {
+	return blacklist;
+}
+
+public void setBlacklist(Blacklist blacklist) {
+	this.blacklist = blacklist;
+}
+
+public int getId() {
     return id;
   }
 
